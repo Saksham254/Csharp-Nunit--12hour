@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run start-time="2021-03-05 17:27:12Z">
+  <command-line><![CDATA[nunit3-console.exe  C:\Users\LenovoE14\Downloads\CSharp-NUnit-Selenium-master\NUnitSelenium\bin\Release\ParallelSelenium.dll]]></command-line>
+</test-run>
