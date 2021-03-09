@@ -23,8 +23,8 @@ namespace NUnitSelenium
     [Parallelizable(ParallelScope.Children)]
     public class NUnitSeleniumSample
     {
-        public static string LT_USERNAME = Environment.GetEnvironmentVariable("LT_USERNAME") == null ? "your username" : Environment.GetEnvironmentVariable("LT_USERNAME");
-        public static string LT_ACCESS_KEY = Environment.GetEnvironmentVariable("LT_ACCESS_KEY") == null ? "your accessKey" : Environment.GetEnvironmentVariable("LT_ACCESS_KEY");
+        public static string LT_USERNAME = "sakshama";
+        public static string LT_ACCESS_KEY = "vULQbs1X2u3zBpdmb3STdAjStBI2nNfFuwjDDMPoIFeRJI3iVB";
         public static bool tunnel = Boolean.Parse(Environment.GetEnvironmentVariable("LT_TUNNEL") == null ? "false" : Environment.GetEnvironmentVariable("LT_TUNNEL"));
         public static string build = Environment.GetEnvironmentVariable("LT_BUILD") == null ? "your build name" : Environment.GetEnvironmentVariable("LT_BUILD");
         public static string seleniumUri = "https://hub.lambdatest.com:443/wd/hub";
