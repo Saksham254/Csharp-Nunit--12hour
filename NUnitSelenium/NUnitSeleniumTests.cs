@@ -16,6 +16,10 @@ namespace NUnitSelenium
     [TestFixture("chrome", "67", "Windows 7")]
     [TestFixture("internet explorer", "10", "Windows 7")]
     [TestFixture("firefox", "55", "Windows 7")]
+    [TestFixture("firefox", "58", "Windows 10")]
+    [TestFixture("chrome", "67", "Windows 10")]
+    [TestFixture("internet explorer", "11", "Windows 10")]
+    [TestFixture("firefox", "55", "Windows 10")]
     [Parallelizable(ParallelScope.Children)]
     public class NUnitSeleniumSample
     {
@@ -41,7 +45,7 @@ namespace NUnitSelenium
         [SetUp]
         public void Init()
         {
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < 25; i++)
             {
                 DesiredCapabilities capabilities = new DesiredCapabilities();
                 capabilities.SetCapability(CapabilityType.BrowserName, browser);
@@ -77,7 +81,7 @@ namespace NUnitSelenium
         [Test]
         public void Todotest()
         {
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < 25; i++)
 
             {
                 Console.WriteLine("Navigating to todos app.");
